@@ -3,8 +3,6 @@ import "./app.css";
 import { useState } from "react";
 
 export default function App() {
-  // const usernameRef = useRef();
-  // console.log(usernameRef, "usernameRef");
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -12,8 +10,6 @@ export default function App() {
     password: "",
     confirmPassword: "",
   });
-
-  // console.log(setValues, "setValues");
 
   const inputs = [
     {
@@ -25,7 +21,7 @@ export default function App() {
         "Username should be 3-16 characters and shouldn't include any special character!",
       label: "Username",
       pattern: "^[A-Za-z0-9]{3,16}$",
-      // required: true,
+      required: true,
     },
     {
       id: 2,
